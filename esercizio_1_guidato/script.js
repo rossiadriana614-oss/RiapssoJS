@@ -42,7 +42,7 @@
 const esempioNomePizza = "Margherita";
 let esempioPrezzo = 7.50;
 const esempioDisponibile = true;
- 
+
 console.log("--- CAPITOLO 1 - Esempio ---");
 console.log("Pizza:", esempioNomePizza);           // → "Margherita"
 console.log("Prezzo:", esempioPrezzo);             // → 7.5
@@ -63,10 +63,10 @@ console.log("Tipo di esempioPrezzo:", typeof esempioPrezzo);         // → "num
 // Poi stampa tutte e 4 con console.log
 
 // SCRIVI QUI IL TUO CODICE (Step 1.1)
-    const NomePizza = "La Pizza del Codice"
-    const maxPizze = 15
-    let pizzeInMenu = 0
-    let pizzeriaAperta = true
+const NomePizza = "La Pizza del Codice"
+const maxPizze = 15
+let pizzeInMenu = 0
+let pizzeriaAperta = true
 
 // ✅ VERIFICA: Apri la console (F12). Dovresti vedere:
 // "La Pizza del Codice"
@@ -81,10 +81,10 @@ console.log("Tipo di esempioPrezzo:", typeof esempioPrezzo);         // → "num
 // Usa questo formato: console.log("Tipo di nomePizzeria:", typeof nomePizzeria);
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 1.2)
-    console.log ("NomePizza:", typeof NomePizza);
-    console.log ("maxPizze", typeof 15);
-    console.log ("pizzeInMenu", typeof 0);
-    console.log ("pizzeriaAperta", typeof true);
+console.log("NomePizza:", typeof NomePizza);
+console.log("maxPizze", typeof 15);
+console.log("pizzeInMenu", typeof 0);
+console.log("pizzeriaAperta", typeof true);
 
 // ✅ VERIFICA: Dovresti vedere in console:
 // "Tipo di nomePizzeria: string"
@@ -142,13 +142,13 @@ console.log("Posso preparare:", possoPreparare);
 // 5. Stampa prezzoFinale e postiDisponibili
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 2.1)
-    const prezzoBase = 8.50
-    const ricarico = 1.3 
-    const prezzoFinale = prezzoBase * ricarico
-    const postiDisponibili = maxPizze - pizzeInMenu
-    console.log (prezzoFinale , postiDisponibili)
+const prezzoBase = 8.50
+const ricarico = 1.3
+const prezzoFinale = prezzoBase * ricarico
+const postiDisponibili = maxPizze - pizzeInMenu
+console.log(prezzoFinale, postiDisponibili)
 
-    
+
 
 // ✅ VERIFICA: In console dovresti vedere:
 // prezzoFinale → 11.05
@@ -164,13 +164,13 @@ console.log("Posso preparare:", possoPreparare);
 // 5. Stampa tutti e 4 i valori
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 2.2)
-    const éConvenient = prezzoFinale < 15 
-    const haPostiMenu =postiDisponibili > 0
-    const puoAggiungere = éConvenient && haPostiMenu
-    const menuPieno = ! haPostiMenu
-    menuPieno = false
+const éConvenient = prezzoFinale < 15
+const haPostiMenu = postiDisponibili > 0
+const puoAggiungere = éConvenient && haPostiMenu
+const menuPieno = !haPostiMenu
+menuPieno = false
 
- 
+
 // ✅ VERIFICA:
 // èConveniente → true (11.05 < 15)
 // haPostiMenu → true (15 > 0)
@@ -229,7 +229,19 @@ if (prezzoPizzaEsempio >= 18) {
 //   → stampa "❌ Pizza rifiutata: dati incompleti"
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 3.1)
-    if ("prezzoCandidata")
+const prezzoCandidata = 9.50
+const categoriaCandidata = "speciale"
+if (prezzoCandidata > 0 && categoriaCandidata !== "") {
+    console.log("Pizza accettata")
+} else {
+    console.log("pizza rifiutata")
+}
+
+
+
+
+
+
 
 
 // ✅ VERIFICA: Dovresti vedere "✅ Pizza accettata nel menu!" (9.50 > 0 e "Speciale" !== "")
@@ -250,6 +262,21 @@ if (prezzoPizzaEsempio >= 18) {
 // Dopo tutti gli if, stampa: console.log("Fascia di prezzo:", fascia)
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 3.2)
+const prezzo = 14
+let fascia = "";
+
+if (prezzo >= 18) {
+    fascia = "Premium";
+} else if (prezzo >= 13) {
+    fascia = "Gourmet";
+} else if (prezzo >= 8) {
+    fascia = "Media";
+} else if (prezzo >= 5) {
+    fascia = "Economica"
+} else if (altrimenti) {
+   fascia = "Budget";  
+}
+
 
 
 
