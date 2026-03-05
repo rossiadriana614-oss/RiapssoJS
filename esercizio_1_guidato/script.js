@@ -387,6 +387,12 @@ console.log("Somma prezzi:", sommaPrezzi); // → 47
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 4.1)
 
+let tavolo = 1;
+while (tavolo <=4){
+    console.log ("tavolo" + tavolo +"pronto");
+    tavolo++;
+}
+
 
 
 // ✅ VERIFICA: 4 righe in console "Tavolo 1 pronto" ... "Tavolo 4 pronto"
