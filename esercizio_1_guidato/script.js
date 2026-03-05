@@ -298,7 +298,32 @@ if (prezzo >= 18) {
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 3.3)
 
+let categoria = "Gourmet"
 
+    switch (categoriaCandidata) {
+        case "classico":
+            console.log("🍕 Le pizze della tradizione");
+            break;
+
+        case "Speciale":
+            console.log("⭐ Creazioni dello chef");
+            break;
+
+        case "Gourmet":
+            console.log("🏆 Ingredienti ricercati e di alta qualità");
+            break;
+
+        case "Stagionale":
+            console.log("🌿 Ingredienti freschi di stagione");
+            break;
+
+            default:
+            console.log("❓ Categoria sconosciuta");
+            break;
+}
+    
+
+    
 
 // ✅ VERIFICA: Dovresti vedere "🏆 Ingredienti ricercati e di alta qualità"
 
