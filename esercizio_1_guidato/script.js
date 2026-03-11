@@ -494,7 +494,7 @@ presentaPizza("Capricciosa", 7);  // → "Capricciosa — Costo: €7 → Vendit
  } else if (prezzo>8){
     return "Media";
  }else if (prezzo >=5){
-    return "Economia";
+    return "Economica";
  }else{
     return "Budget";
  }
@@ -535,7 +535,10 @@ if (prezzo >= 18) {
 //   console.log(creaDescrizione("Margherita", "Pomodoro, mozzarella", 8));
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 5.2)
-
+function creaDescrizione(nome,ingredienti,prezzo){
+    let fascia =calcolaFascia(prezzo);
+    let descrizione = "${nome} ${ingredienti} E${prezzo} ${fascia}";
+}
 
 
 // ✅ VERIFICA: "🍕 Margherita — Ingredienti: Pomodoro, mozzarella | Prezzo: €8 | Fascia: Media"
