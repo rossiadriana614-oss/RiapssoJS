@@ -487,7 +487,17 @@ presentaPizza("Capricciosa", 7);  // → "Capricciosa — Costo: €7 → Vendit
 //   console.log(calcolaFascia(4));    // → "Budget"
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 5.1)
-
+ if (prezzo>= 18){
+    return "Premium";
+ } else if (prezzo>=13){
+    return  "Gourmet";
+ } else if (prezzo>8){
+    return "Media";
+ }else if (prezzo >=5){
+    return "Economia";
+ }else{
+    return "Budget";
+ }
 
 
 
