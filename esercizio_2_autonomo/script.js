@@ -28,7 +28,11 @@
 
 // 👇 SCRIVI QUI IL TUO CODICE
 
-
+    const nomeApp = "La ma Rubrica"
+    const number = 1.0
+    const maxContatti = 50
+    let contattiRegistrati = 0
+    let = true
 
 // ============================================================================
 // CAPITOLO 2 — OPERATORI
