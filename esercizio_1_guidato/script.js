@@ -625,6 +625,10 @@ console.log("Array completo:", nomiPizze);
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 6.2)
 
+console.log(nomiMaiuscoli);
+const nomiMaiuscoli =nomiPizze.map(function(nome){
+    return nome.toUpperCase();
+});
 
 
 // ✅ VERIFICA: Vedi le 3 pizze con "🍕" e poi l'array in maiuscolo
