@@ -802,6 +802,15 @@ console.log("Titolo attuale:", titoloEl.textContent); // → "Il Nostro Menu"
 //    in "#d35400" usando: elemento.style.color = "#d35400";
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 8.1)
+"titolo-menu"
+    const titolo = document.getElementById("titolo-menu");
+    titolo.textContent = "🍕 " + nomePizzeria;
+
+    const statTotale = document.getElementById("stat-totale");
+    statTotale.textContent = menu.length;
+
+    statTotale.style.color = "#d35400";
+
 
 
 
