@@ -699,6 +699,16 @@ console.log(nomeEstratto, prezzoEstratto);         // → "Napoletana" 9.5
 // 4. Stampa l'oggetto completo: console.log(miaPizza)
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 7.1)
+ const miaPizza = {
+    nome:"Margherita",
+    ingredienti:"Pomodoro,mozzarella,basilico",
+    prezzo:10.50,
+    disponibile:true
+ };
+ console.log(miaPizza.nome);
+ miaPizza.prezzo = 12.00;
+    miaPizza.fascia = calcolaFascia(miaPizza.prezzo);
+    console.log(miaPizza);
 
 
 
