@@ -595,10 +595,19 @@ for (const pizza of pizzeEsempio) {
 // 6. Stampa l'array completo
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 6.1)
+let nomiPizze =["Margherita","Diavola","Capricciosa"];
 
+nomiPizze.push("Quattro Formaggi");
 
+console.log("Numero di pizze:",
+   nomiPizze.length); 
 
-// ✅ VERIFICA: L'array finale ha 3 elementi (dopo il pop)
+console.log("La seconda pizza è:",
+nomiPizze[1]);
+
+nomiPizze.pop();
+
+console.log("Array completo:", nomiPizze);
 
 // ─────────────────────────────────────────────────────────
 // ✏️ STEP 6.2 — Scorri e trasforma l'array
