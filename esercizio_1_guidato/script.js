@@ -836,6 +836,8 @@ console.log("Titolo attuale:", titoloEl.textContent); // → "Il Nostro Menu"
 
 
 
+
+
 // ✅ VERIFICA: Un messaggio verde "Benvenuto nella Pizzeria!" appare nella pagina
 
 
@@ -909,8 +911,16 @@ const listaPizze = document.querySelector("#lista-pizze");
 //    c. Aggiungi il <li> alla lista con: lista.appendChild(li)
 
 // 👇 SCRIVI QUI IL TUO CODICE (Step 9.1)
-
-
+ const  ul = document.getElementById("lista-pizze");
+for (let i = 0; i <menu.length; i++){
+    const pizza =menu[i];
+    const li = document.createElement("li");
+    li.innerHTML = '<div class="info-pizza">' +
+                   '  <span class="nome-pizza">' + pizza.nome + '</span>' +
+                   '  <span class="dettagli-pizza"> | ' + pizza.ingredienti + ' | €' + pizza.prezzo + '</span>' +
+                   '</div>';
+    ul.appendChild(li);
+}
 
 // ✅ VERIFICA: Le 3 pizze del menu appaiono nella pagina!
 
